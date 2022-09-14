@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>drawing</title>
+        <style>
+            html,
+            body {
+                touch-action: none;
+                user-select: none;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            * {
+                user-select: none;
+            }
+
+            canvas {
+                margin: 0;
+                padding: 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                user-select: none;
+            }
+
+            select {
+                position: fixed;
+                z-index: 1000;
+                top: 10px;
+                padding: 5px;
+            }
+        </style>
+      <script type="module" crossorigin src="/assets/index.de950c75.js"></script>
+    </head>
+    <body oncontextmenu="return false;">
+        <select name="fractal-type" id="select">
+            <option value="Sierpinski-Carpet">Sierpinski-Carpet</option>
+            <option value="Sierpinski-Triangle">Sierpinski-Triangle</option>
+            <option value="Koch-Rectangle">Koch-Snowflake-Rectangle</option>
+            <option value="Koch-Snowflake-Single">Koch-Curve</option>
+            <option value="Koch-Snowflake">Koch-Snowflake</option>
+            <option value="Tree">Tree</option>
+        </select>
+        
+    </body>
+</html>
